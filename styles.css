@@ -1,0 +1,258 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 10rem;
+}
+
+/* font para todo el proyecto */
+body {
+  font-family: "Inter", sans-serif;
+}
+
+/* Estilos generales */
+section {
+  display: flex;
+  min-height: 38rem;
+  padding: 2rem 0.5rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+footer {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  padding: 2rem;
+  background-color: #333;
+}
+
+a{
+  text-decoration: none;
+}
+
+.seccion-titulo {
+  font-size: 1.5rem;
+  padding: 15px 0;
+  font-weight: bold;
+  text-align: center;
+}
+
+.seccion-texto {
+  font-size: 1.2rem;
+  padding: 15px 0;
+  margin: 0;
+  text-wrap: balance;
+}
+
+.btn-primary {
+  background-color: #ffc107;
+  border-color: #f6f6f7;
+  padding: 1rem 1.5rem;
+}
+
+.btn-primary:hover {
+  background-color: #333;
+  border-color: #f6f6f7;
+}
+
+/* Barra de navegacion */
+.navbar {
+  padding: 1.5rem;
+  background-color: #f6f6f7;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+/* Seccion hero */
+.hero {
+  background-color: #f6f6f7;
+  background-image: url(./images/backgrounds/Post_Vertical_RBravino.png);
+  background-position: 100% 65%;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-principal {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.hero-textContent {
+  max-width: 32rem;
+  padding: 1rem;
+}
+
+/* Seccion Catalogo */
+.catalogo {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-image: url(./images/backgrounds/Plantilla_PresentacionDeLogo-11-opt.png);
+  background-color: #333;
+}
+
+.catalogo-container {
+  max-width: 52rem;
+  text-align: center;
+  background-color: white;
+  border-radius: 15px;
+  outline: solid 2px rgba(0, 0, 0, 0.4);
+  padding: 4rem;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.catalogo-textContent {
+  margin-bottom: 15px;
+}
+
+/* Seccion Contacto */
+.contacto {
+  background-color: #edb000;
+  color: rgb(36, 35, 35);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contacto-container {
+  max-width: 32rem;
+  text-align: center;
+}
+
+.redes-cards-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem;
+  gap: 1rem;
+}
+
+.custom-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 9rem;
+  height: 8rem;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  background-color: whitesmoke;
+  color: #333;
+}
+
+.card-icon i {
+  font-size: 3rem;
+  color: #edb000;
+}
+
+/* Footer */
+.cliente-slogan {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 31rem;
+  height: 17.5rem;
+  text-align: center;
+  padding: 2rem;
+  gap: 1rem;
+}
+
+.cliente-slogan img {
+  width: 20rem;
+  height: 10rem;
+}
+
+.cliente-slogan p {
+  color: rgb(212, 212, 212);
+}
+
+.contact-info {
+  margin: 20px 0;
+}
+
+.info-header {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+/* Catalogo & productos */
+.productos {
+  flex-direction: column;
+  background-color: #1c1c1c;
+}
+
+.producto-container {
+  min-height: 32rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #f6f6f7;
+  border-radius: 15px;
+  margin: 20px auto;
+  padding: 1rem;
+  gap: 4px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+}
+
+.producto-container img{
+  max-width: 500px;
+}
+
+.productoInfo {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 4px;
+  max-width: 24rem;
+}
+
+
+@media screen and (max-width: 768px) {
+  .navbar-collapse {
+    text-align: center;
+  }
+
+  .hero-principal {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .contacto-container {
+    padding: 2rem 0;
+  }
+
+  .redes-cards-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  footer {
+    flex-direction: column;
+    padding-top: 4rem;
+    text-align: center;
+  }
+
+  .info-header {
+    justify-content: center;
+  }
+
+
+  .producto-container{
+    flex-direction: column-reverse;
+  }
+}

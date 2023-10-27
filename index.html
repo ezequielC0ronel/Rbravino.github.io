@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RBravino</title>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+      defer
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      href="./images/logos/Isologo_FondoOscuro.png"
+      type="image/x-icon"
+    />
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-md sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="./images/logos/Logo_FondoClaro.png"
+            alt="Logo RBravino"
+            width="130"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar-toggler"
+          aria-controls="navbar-toggler"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-toggler">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="index.html"
+              >Inicio</a
+            >
+            <a class="nav-link" href="catalogo.html">Catalogo</a>
+            <a class="nav-link" href="#contacto">Contacto</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container hero-principal">
+        <div class="hero-textContent">
+          <h1>¡Bienvenido a RBravino Hidráulica!</h1>
+          <h5>
+            Conseguí las mejores bombas hidráulicas de engranajes, tomas de
+            fuerza y una amplia gama de productos para satisfacer todas tus
+            necesidades en Argentina.
+          </h5>
+        </div>
+        <img
+          src="./images/logos/Isologo_FondoClaro.png"
+          alt="Logo Rbravino"
+          width="250"
+        />
+      </div>
+    </section>
+
+    <!-- Catalogo Section -->
+    <section class="catalogo">
+      <div class="container catalogo-container" id="catalogo">
+        <div class="catalogo-textContent">
+          <h2 class="seccion-titulo">Explora Nuestro Catalogo</h2>
+          <p class="seccion-texto">
+            Descubrí nuestra selección exclusiva de productos destacados. Hemos
+            elegido cuidadosamente hasta 5 artículos especiales para
+            presentarte.
+          </p>
+          <p class="seccion-texto">
+            ¿Querés conocer más? <br> Hacé clic en 'Ver Catálogo' y explorá nuestros
+            increíbles productos.
+          </p>
+        </div>
+        <a class="btn btn-primary" href="catalogo.html" role="button">Ver Catálogo</a>
+      </div>
+    </section>
+
+    <!--Contacto Section -->
+    <section class="contacto">
+      <div class="container contacto-container" id="contacto">
+        <div class="contacto-textContent">
+          <h2 class="seccion-titulo">Contactate con Nosotros</h2>
+          <p class="seccion-texto">
+            ¿Querés obtener más información sobre nuestros productos y servicios? ¡No dudes en contactarnos!
+          </p>
+          <p class="seccion-texto">
+            Nuestro equipo está siempre a tu disposición para responder a tus preguntas y ofrecerte asesoramiento personalizado.
+          </p>
+          <div class="redes-cards-container">
+            <a href="https://www.facebook.com/RBravino">
+            <div class="custom-card">
+              <div class="card-icon">
+                <i class="bi bi-facebook"></i>
+              </div>
+              <div class="card-text">
+                <p>Facebook</p>
+              </div>
+            </div>
+            </a>
+            <a href="https://www.instagram.com/rbravinooficial/">
+            <div class="custom-card">
+              <div class="card-icon">
+                <i class="bi bi-instagram"></i>
+              </div>
+              <div class="card-text">
+                <p>Instagram</p>
+              </div>
+            </div>
+            </a>
+            <!-- colocar numero de telefono 549XXXXX -->
+            <a href="https://wa.me/5493512216808?">
+            <div class="custom-card">
+              <div class="card-icon">
+                <i class="bi bi-whatsapp"></i>
+              </div>
+              <div class="card-text">
+                <p>WhatsApp</p>
+              </div>
+            </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="cliente-slogan">
+        <img
+          src="./images/logos/LogoGrande_Claro.png"
+          alt="Logo RBravino Footer"
+        />
+        <p>
+          Potenciando tu maquinaria con calidad y rendimiento. Expertos en Bombas Hidráulicas y Tomas de Fuerza, orgullosamente impulsados por NIR Argentina.
+        </p>
+      </div>
+
+      <div class="client-contact-info">
+        <div class="contact-info">
+          <div class="info-header">
+            <i class="bi bi-telephone"></i>
+            <p>Telefonos</p>
+          </div>
+          <div class="info-text">
+            <p>+54 9 351-5493279</p>
+            <p>+54 9 351-2216808</p>
+          </div>
+        </div>
+
+        <div class="contact-info">
+          <div class="info-header">
+            <i class="bi bi-envelope-at"></i>
+            <p>Email</p>
+          </div>
+          <div class="info-tex">
+            <p>rbravinohidraulica@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
